@@ -1,0 +1,25 @@
+
+.card-container-sm {
+  row-gap: 2rem;
+  padding-bottom: 5rem;
+}
+
+.brand {
+  max-width: 1440px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  padding-left: 2rem;
+}
+  .card-container-md,
+  .card-container-sm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 10fr));
+    align-items: center;
+    justify-content: center;
+    row-gap: 10rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    margin: 0 auto;
+    max-width: 1440px;
+    column-gap: 2rem;
+  }

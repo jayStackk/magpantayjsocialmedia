@@ -1,0 +1,28 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1440px;
+    margin: 0 auto;
+    align-items: center;
+    padding-bottom: 10rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  
+  @media screen and (max-width: 504px) {
+    .header__container {
+      flex-direction: column;
+      padding-bottom: 7rem;
+    }
+    .header__container .brand {
+      padding-left: 0;
+      font-size: 1.7rem;
+      margin-bottom: 0;
+    }
+    .header__container .theme-switch {
+      justify-content: space-between;
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+  

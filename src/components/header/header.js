@@ -1,0 +1,36 @@
+import React, { useContext } from "react";
+import ThemeContext from "../../context/themeSwitch";
+import "./header.css";
+import ThemeSwitcher from "../themeSwitch/SwitchColor";
+
+const Header = () => {
+  const { theme } = useContext(ThemeContext);
+
+  const { bg, topBg, text, textWhite } = theme;
+  document.body.style.backgroundColor = bg;
+
+  return (
+    <header
+      style={{
+        backgroundColor: topBg,
+        color: textWhite,
+        transition: "all 250ms ease-in-out",
+      }}
+    >
+      <div className="header__container">
+        <div className="info">
+          <h1 className="brand">Social Media Dashboard</h1>
+          <p
+            style={{ color: text, transition: "all 250ms ease-in-out" }}
+            className="description"
+          >
+            Total Followers: 23,004
+          </p>
+        </div>
+        <ThemeSwitcher />
+      </div>
+    </header>
+  );
+};
+
+export default Header;
